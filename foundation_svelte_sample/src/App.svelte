@@ -1,46 +1,39 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
+  import Counter2 from './lib/Counter2.svelte'
+  import Counter3 from './lib/Counter3.svelte'
+  import Counter4 from './lib/Counter4.svelte'
+
+  export let name;
 </script>
 
 <main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer"> 
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer"> 
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+  <h1>Hello {name}!</h1>
+  <!-- Appから文字列を渡したい場合は以下 -->
+  <Counter name="カウンター1" />
+  <Counter2 name="カウンター2" />
+  <Counter3 name="カウンター3" />
+  <Counter4 name="カウンター4" />
 </main>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
+  main {
+    text-align: center;
+    padding: 1em;
+    max-width: 240px;
+    margin: 0 auto;
   }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+
+  h1 {
+    color: #ff3e00;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 100;
   }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
+
+  @media (min-width: 640px) {
+    main {
+      max-width: none;
+    }
   }
 </style>
