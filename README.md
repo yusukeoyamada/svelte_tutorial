@@ -6,3 +6,14 @@
           - ```npx degit sveltejs/template svelte_project```
       - ```npm install```
       - ```npm run dev```
+
+    - 以下、各セッションごとに対応関係にあるプロジェクトについての仔細
+      - (4) Svelteの基礎: 「foundation_svelte_sample」
+      - (5) ライフサイクルフック: 「lifecycle_hook_svelte_sample」
+      - (6) 外部リソースからのデータ取得: 「get_data_from_api_svelte_sample」
+      - (7) Styleの適用: 「style_svelte_sample」
+      - (8) Form の設定: 「form_svelte_sample」
+      - (9) Transitionの設定: 「transition_svelte_sample」
+      - (10) コンポーネントの基礎: 「component_svelte_sample」
+      - (11) Context API: 「context_api_svelte_sample」
+      - (12) Store: 「store_svelte_sample」
