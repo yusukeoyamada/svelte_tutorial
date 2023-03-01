@@ -5,6 +5,7 @@
 
   // let user = '';
 
+  // writable storeのデータにアクセスするためには、subscribeを行う必要が
   // const unsubscribe = UserStore.subscribe((value) => {
   //   user = value;
   // });
@@ -13,10 +14,11 @@
   // });
 </script>
 
-<!-- Userコンポーネントでもwritable storeのデータにアクセスできる -->
-<h2>User Email</h2>
-<!-- <div>{user.email}</div> -->
+<!-- Userコンポーネントでも、writable storeのデータにアクセスできる -->
+<!-- <h2>User Email</h2>
+<div>{user.email}</div> -->
 
-<!-- Svelteはsubscribeとunsubscribeを管理する機能を備えているため、その機能を利用することができます。
-利用するためimportしたstoreの名前の前に$(ダラー)をつけます。 -->
+<!-- Svelteは、subscribeとunsubscribeを管理する機能を備えています。
+その機能を利用するためには、importしたstoreの名前の前に、$(ダラー)をつけます。 -->
+<h2>User Email</h2>
 <div>{$user.email}</div>
