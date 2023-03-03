@@ -4,7 +4,7 @@
       - ```npm create vite@latest myapp -- --template svelte```
         - 一部、以下コマンドで作成しているものもある(現在はメンテナンスされていない為、非推薦)(「svelte_project」部分がプロジェクト名)
           - ```npx degit sveltejs/template svelte_project```
-      - ```npm install```
+      - ```npm install``` (「```cd myapp```」 後に)
       - ```npm run dev```
 
     - 以下、各セッションごとに対応関係にあるプロジェクトについての仔細
